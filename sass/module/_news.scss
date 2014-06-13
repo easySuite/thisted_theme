@@ -1,0 +1,17 @@
+.news-list {
+
+  .news-label {
+    @extend .label;
+  }
+}
+
+// Tags
+.super-heading {
+
+  .field-name-field-ding-news-library {
+
+    .field-item {
+      @extend .label;
+    }
+  }
+}

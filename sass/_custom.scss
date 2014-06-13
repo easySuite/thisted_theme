@@ -1,0 +1,308 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $bg-color;
+  color: $font-color-primary;
+}
+
+// Links color
+
+a {
+  &:link {
+    color: $link-color;
+  }
+
+  &:visited {
+    color: darken($link-color, 15%);
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+  }
+}
+
+// Pane title
+
+.content-wrapper {
+  margin-top: 0;
+}
+
+// Logo
+
+.logo {
+  margin-top: 40px;
+  max-width: 390px;
+  max-height: 95px;
+
+  a {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+// Selection color
+//==========================================================================
+
+@include selection($white, darken($color-secondary-dark, 10%));
+
+
+
+// Layout styles
+//==========================================================================
+
+.header-wrapper .header-inner > section {
+  margin-top: 0;
+  padding: 0 10px;
+}
+
+.topbar,
+.header-wrapper {
+  background: none;
+}
+
+.site-header {
+  margin: 0 auto;
+  max-width: 1184px;
+  width: 100%;
+}
+
+.topbar {
+  padding-top: 0;
+
+  @at-root {
+    .topbar-inner {
+
+      @include till-large() {
+        min-height: 210px;
+      }
+      background: url(../images/header.png) 50% 100% no-repeat;
+      background-size: contain;
+
+      // Media queries
+
+      @include large-x-large() {
+        min-height: 239px;
+      }
+    }
+  }
+}
+
+.topbar-menu {
+  top: 40px;
+  bottom: auto;
+}
+
+.header-wrapper {
+  overflow: hidden;
+
+  .header-inner {
+    padding: 0 10px;
+  }
+}
+
+.site-header > .header-wrapper,
+.site-header > .navigation-wrapper {
+  background: url(../images/navigation.png) 50% 50% repeat-y;
+  background-size: contain;
+}
+
+.header-wrapper .navigation-wrapper {
+  background-color: transparent;
+}
+
+.menu-item {
+  color: $white;
+
+  &:hover,
+  &.active {
+    color: $link-color-hover;
+  }
+}
+
+.bottom {
+  background-color: #0c0d02;
+
+  &,
+  a {
+    color: $white;
+    font-size: 110%;
+  }
+}
+
+.bottom-bg {
+  max-width: 1184px;
+  height: 163px;
+  background: url(../images/footer-bg.png) 50% 100% no-repeat;
+}
+
+.bottom,
+.bottom-bg {
+  margin: 0 auto;
+  background-size: contain;
+}
+
+.bottom {
+  padding: 0;
+  min-height: 150px;
+  background: #0d0e03 url(../images/footer-bg-bottom.png) 50% 0 no-repeat;
+
+  .pane-content {
+    overflow: hidden;
+  }
+}
+
+.footer {
+  @include box-sizing(border-box);
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 40px;
+  max-width: 1180px;
+  background-color: transparent;
+  text-align: left;
+
+  // Media queries
+
+  @include till-x-large {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+
+
+// 2 Column Layout
+//==========================================================================
+
+.kulturrummet-2col {
+  .page-title,
+  .pane-title,
+  .pane-menu-title h2 {
+    @include font-size(30px);
+    color: $color-secondary;
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+.front .kulturrummet-2col-left {
+  .pane-title {
+    color: $color-secondary;
+  }
+}
+
+.kulturrummet-2col-left {
+  .pane-title {
+    color: $white;
+  }
+
+  ul {
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 15px;
+      border: none;
+
+      &:before {
+        content: "";
+      }
+
+      a {
+        @include font-size(18px);
+        margin-left: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &:hover,
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.kulturrummet-2col .kulturrummet-2col-right {
+  .news-list {
+    margin-right: -25px;
+    margin-left: -25px;
+
+    li {
+      margin-bottom: 0;
+      padding-right: 25px;
+      padding-left: 25px;
+      background-color: #fbfbfb;
+
+      &:nth-of-type(2n+2) {
+        background-color: $white;
+      }
+    }
+
+    .news-label {
+      @include border-radius(5px);
+    }
+
+    .news-heading a {
+      color: $color-secondary;
+      font-weight: 700;
+      font-size: 80%;
+    }
+
+    .news-date {
+      color: #839da6;
+      font-size: 80%;
+    }
+
+    .news-image-wrapper {
+      max-width: 110px;
+    }
+
+    .news-heading,
+    .news-sub-heading,
+    .news-list-content {
+      margin-left: 140px;
+    }
+  }
+
+  // Frontpage group blocks
+
+  .group-blocks--wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// Tabs
+
+#tabs {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+
+// Labels
+
+.kulturrummet-2col-right {
+  .label,
+  .view-node-search-result .list-item .field-type-taxonomy-term-reference a,
+  .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a,
+  .subjects .subject, .news-list .news-label,
+  .super-heading .field-name-field-ding-news-library .field-item {
+    @include border-radius(5px);
+  }
+
+  .news-list .news-label {
+    padding: 3px 5px;
+  }
+    // margin-right: 8px;
+    // margin-bottom: 8px;
+    // display: inline-block;
+}

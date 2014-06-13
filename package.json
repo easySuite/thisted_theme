@@ -1,0 +1,29 @@
+{
+  "name": "kulturrummet",
+  "version": "0.0.0",
+  "author": {
+    "name": "Andrei Bunulu",
+    "email": "bunulu@gmail.com"
+  },
+  "homepage": "",
+  "licenses": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.3.1",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-contrib-uglify" : "0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-autoprefixer": "~0.7.3",
+    "grunt-contrib-imagemin": "~0.5.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

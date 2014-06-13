@@ -1,0 +1,83 @@
+// Search overlay
+//==========================================================================
+
+.search-overlay--inner {
+  @include border-radius(0);
+}
+
+
+
+// Search
+//==========================================================================
+
+.search {
+  @extend %search-user-header;
+}
+
+
+
+// Search in content
+//==========================================================================
+
+.search-field-in-content {
+  @extend .search;
+}
+
+
+
+// Search results list
+//==========================================================================
+
+.subjects {
+  .subject {
+    @extend .label;
+  }
+}
+
+
+
+// Facet browser styling
+//==========================================================================
+
+.pane-ding-facetbrowser {
+
+  a:visited {
+    color: $link-color;
+  }
+}
+
+.pane-search-backends {
+  @extend .pane-ding-facetbrowser;
+  display: none;
+}
+
+
+
+// Search autocomplete
+//==========================================================================
+
+#autocomplete {
+  @include border-radius(0);
+
+  li {
+    a {
+      @include border-radius(0);
+    }
+  }
+}
+
+
+
+// Object display
+//==========================================================================
+
+.pane-ting-object {
+
+  // Material Details - Collapsible
+  .collapsible .field-group-format-title,
+  .ding-periodical-fold {
+    &:before {
+      color: $link-color;
+    }
+  }
+}

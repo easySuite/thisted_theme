@@ -1,0 +1,100 @@
+// Standard color definitions
+//==========================================================================
+
+$white:                           #fff !default;
+$black:                           #000 !default;
+
+
+
+// Branding colors
+//==========================================================================
+
+$bg-color:                        #d7e0e3;
+
+$layout-left:                     #353c3e;
+$layout-right:                    #fbfbfb;
+
+$color-primary:                   #353c3e;
+$color-primary-dark:              #252525;
+$color-primary-light:             #b4b4b4;
+
+$color-secondary:                 #ec3030;
+$color-secondary-dark:            #8B0000;
+
+$link-color:                      #d20001;
+$link-color-hover:                darken($link-color, 10%);
+
+
+
+// Labels
+//==========================================================================
+
+$label-bg-color:                  #131313 !default;
+$label-bg-color-hover:            darken($label-bg-color, 10%) !default;
+$label-text-color:                $white !default;
+$label-text-color-hover:          darken($white, 10%) !default;
+
+
+
+// Typography
+//==========================================================================
+
+$font-color-primary:             #353c3e;
+$font-color-secondary:           #ec3030;
+
+$base-font-size:                  16px !default;
+$base-line-height:                1.3;
+$base-font-family:                'Source Sans Pro', sans-serif;
+$base-font-weight-light:          300;
+$base-font-weight-normal:         400;
+$base-font-weight-bold:           500;
+
+
+
+// Font sizes
+//==========================================================================
+
+$font-size-h1:                   ceil($base-font-size * 2.25) !default;  // ~36px
+$font-size-h2:                   floor($base-font-size * 1.88) !default; // ~30px
+$font-size-h3:                   ceil($base-font-size * 1.5) !default;   // ~24px
+$font-size-h4:                   floor($base-font-size * 1.13) !default; // ~18px
+$font-size-h5:                   floor($base-font-size * 0.88) !default; // ~14px
+$font-size-h6:                   ceil($base-font-size * 0.75) !default;  // ~12px
+
+
+
+// Zen Grid variables
+//==========================================================================
+
+$zen-column-count: 12;
+$zen-gutter-width: 20px;
+
+
+
+// Breakpoints
+//==========================================================================
+
+$breakpoint-low:                  580px;
+$breakpoint-small:                480px;
+$breakpoint-medium:               768px;
+$breakpoint-large:                940px;
+$breakpoint-x-large:              1210px;
+
+
+
+// Availability
+// ==========================================================================
+
+$availability-pending:                    #00b7e7;
+$availability-processed:                  #00b7e7;
+$availability-available:                  #00b7e7;
+$availability-reservable:                 #00b7e7;
+$availability-available-reservable:       #00b7e7;
+$availability-available-not-reservable:   #336699;
+$availability-unavailable-reservable:     #00b7e7;
+$availability-unavailable-not-reservable: #336699;
+
+$legend-available:                        #00b7e7;
+$legend-on-loan:                          #00b7e7;
+$legend-unavailable:                      #336699;
+$legend-unreservable:                     #336699;

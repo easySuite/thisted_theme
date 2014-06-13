@@ -1,0 +1,60 @@
+.kulturrummet-2col {
+
+  // Media till-x-large
+
+  @include from-medium() {
+    display: table;
+  }
+
+  // Media till-x-large
+
+  @include till-x-large() {
+    margin-right: 0.9%;
+    margin-left: 1.1%;
+  }
+
+  // Media x-large
+
+  @include x-large() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.kulturrummet-2col-left {
+  background-color: $layout-left;
+  color: $white;
+
+  // Media Tablet-desktop
+
+  @include from-medium() {
+    width: span(32%);
+  }
+
+  // Media mobile
+
+  @include till-medium() {
+  }
+}
+
+.kulturrummet-2col-right {
+  background-color: $layout-right;
+
+  // Media From-medium
+
+  @include from-medium() {
+    width: span(68%);
+  }
+}
+
+.kulturrummet-2col-left,
+.kulturrummet-2col-right {
+  padding: 40px 25px 25px 25px;
+  vertical-align: top;
+
+  // Media from-medium
+
+  @include from-medium() {
+    display: table-cell;
+  }
+}

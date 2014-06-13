@@ -1,0 +1,68 @@
+// Frontpage
+
+.frontpage-layout .layout-wrapper {
+  padding: 0;
+
+  .kulturrummet-2col-left {
+    color: $white;
+
+    .pane-title {
+      font-size: 230%;
+      line-height: 1;
+    }
+  }
+
+  // Frontpage Newslist
+
+  .news-list {
+    margin-right: -25px;
+    margin-left: -25px;
+
+    li {
+      margin-bottom: 0;
+      padding-right: 25px;
+      padding-left: 25px;
+      background-color: #fbfbfb;
+
+      &:nth-of-type(2n+2) {
+        background-color: $white;
+      }
+    }
+
+    .news-label {
+      @include border-radius(5px);
+    }
+
+    .news-heading a {
+      color: $color-secondary;
+      font-weight: 700;
+      font-size: 80%;
+    }
+
+    .news-date {
+      color: #839da6;
+      font-size: 80%;
+    }
+
+    .news-author {
+      display: none;
+    }
+
+    .news-image-wrapper {
+      max-width: 110px;
+    }
+
+    .news-heading,
+    .news-sub-heading,
+    .news-list-content {
+      margin-left: 140px;
+    }
+  }
+
+  // Frontpage group blocks
+
+  .group-blocks--wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

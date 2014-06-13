@@ -1,0 +1,13 @@
+// Shared styling used for search and user form in topbar
+//==========================================================================
+
+%search-user-header {
+
+  .form-text {
+    @include border-radius(0);
+  }
+
+  .form-submit {
+    @include border-radius(0);
+  }
+}

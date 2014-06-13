@@ -1,0 +1,33 @@
+.header-wrapper {
+
+  // Add padding if the search is in the header
+
+  .user {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.user {
+  @extend %search-user-header;
+
+  @include small() {
+    .form-item-name,
+    .form-item-pass {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .form-item-name {
+    padding-left: 0;
+
+    i {
+      left: 14px;
+    }
+  }
+
+  .form-item-pass {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,25 @@
+
+.label {
+  background-color: $label-bg-color;
+  color: $label-text-color;
+
+  // Make sure it works with a wrapper
+  a {
+    &:link,
+    &:visited,
+    &:hover {
+      color: $label-text-color;
+    }
+  }
+
+  // Make sure it works on a link
+  &:link,
+  &:visited {
+    color: $label-text-color;
+  }
+
+  &:hover {
+    background-color: $label-bg-color-hover;
+    color: $label-text-color-hover;
+  }
+}

@@ -1,0 +1,36 @@
+@media only screen and (min-width: 769px) {
+  .kulturrummet-2col {
+    display: table;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  .kulturrummet-2col {
+    margin-right: 0.9%;
+    margin-left: 1.1%;
+  }
+}
+@media only screen and (min-width: 1211px) {
+  .kulturrummet-2col {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .kulturrummet-2col-left {
+    width: 32%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .kulturrummet-2col-right {
+    width: 68%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .kulturrummet-2col-left,
+  .kulturrummet-2col-right {
+    display: table-cell;
+  }
+}

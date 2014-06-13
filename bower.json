@@ -1,0 +1,9 @@
+{
+  "name": "kulturrummet",
+  "version": "0.0.0",
+  "dependencies": {
+    "zen-grids": "1.4",
+    "susy": "~2.1.2"
+  },
+  "devDependencies": {}
+}
