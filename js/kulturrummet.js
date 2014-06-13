@@ -43,7 +43,9 @@
    */
   Drupal.behaviors.search = {
     attach: function (context) {
-      $('.topbar-link-search', context).click();
+      $(function() {
+        $('.topbar-link-search', context).click();
+      });
     }
   };
 })(jQuery);
