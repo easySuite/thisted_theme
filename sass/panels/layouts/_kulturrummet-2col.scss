@@ -1,10 +1,4 @@
-.kulturrummet-2col {
-
-  // Media till-x-large
-
-  @include from-medium() {
-    display: table;
-  }
+.panel-2col {
 
   // Media till-x-large
 
@@ -19,42 +13,38 @@
     margin-right: 20px;
     margin-left: 20px;
   }
-}
 
-.kulturrummet-2col-left {
-  background-color: $layout-left;
-  color: $white;
+  .panel-col-first,
+  .panel-col-last {
+    @include box-sizing(border-box);
+    padding: 40px 25px 25px 25px;
 
-  // Media Tablet-desktop
+    // Media from-medium
 
-  @include from-medium() {
-    width: span(32%);
+    @include from-medium() {
+      float: left;
+    }
   }
 
-  // Media mobile
+  .panel-col-first {
+    background-color: $layout-left;
+    color: $white;
 
-  @include till-medium() {
+    // Media Tablet-desktop
+
+    @include from-medium() {
+      width: span(32%);
+    }
+  }
+
+  .panel-col-last {
+    background-color: $layout-right;
+
+    // Media From-medium
+
+    @include from-medium() {
+      width: span(68%);
+    }
   }
 }
 
-.kulturrummet-2col-right {
-  background-color: $layout-right;
-
-  // Media From-medium
-
-  @include from-medium() {
-    width: span(68%);
-  }
-}
-
-.kulturrummet-2col-left,
-.kulturrummet-2col-right {
-  padding: 40px 25px 25px 25px;
-  vertical-align: top;
-
-  // Media from-medium
-
-  @include from-medium() {
-    display: table-cell;
-  }
-}

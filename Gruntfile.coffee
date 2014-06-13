@@ -18,7 +18,7 @@ module.exports = (grunt) ->
     sass:
       dist:
         options:
-          style: 'expanded'
+          style: 'compressed'
           sourcemap: true
           unixNewlines: true
           debugInfo: false

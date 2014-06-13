@@ -179,7 +179,7 @@ a {
 // 2 Column Layout
 //==========================================================================
 
-.kulturrummet-2col {
+.panel-2col {
   .page-title,
   .pane-title,
   .pane-menu-title h2 {
@@ -190,13 +190,13 @@ a {
   }
 }
 
-.front .kulturrummet-2col-left {
+.front .panel-2col .panel-col-first {
   .pane-title {
     color: $color-secondary;
   }
 }
 
-.kulturrummet-2col-left {
+.panel-2col .panel-col-first {
   .pane-title {
     color: $white;
   }
@@ -228,7 +228,7 @@ a {
   }
 }
 
-.kulturrummet-2col .kulturrummet-2col-right {
+.panel-2col .panel-col-last {
   .news-list {
     margin-right: -25px;
     margin-left: -25px;
@@ -290,7 +290,7 @@ a {
 
 // Labels
 
-.kulturrummet-2col-right {
+.panel-2col .panel-col-last {
   .label,
   .view-node-search-result .list-item .field-type-taxonomy-term-reference a,
   .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a,
@@ -302,7 +302,4 @@ a {
   .news-list .news-label {
     padding: 3px 5px;
   }
-    // margin-right: 8px;
-    // margin-bottom: 8px;
-    // display: inline-block;
 }
