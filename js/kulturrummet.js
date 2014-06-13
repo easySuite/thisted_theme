@@ -2,7 +2,7 @@
   'use strict';
 
   /**
-   * Makes columns equals
+   * Makes columns equals.
    */
   Drupal.behaviors.logo = {
     attach: function (context) {
@@ -35,6 +35,15 @@
           equalHeights(leftCol, rightCol);
         });
       });
+    }
+  };
+
+  /**
+   * Collapsing search form by default.
+   */
+  Drupal.behaviors.search = {
+    attach: function (context) {
+      $('.topbar-link-search', context).click();
     }
   };
 })(jQuery);
