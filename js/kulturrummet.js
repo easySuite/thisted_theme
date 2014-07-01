@@ -44,7 +44,11 @@
   Drupal.behaviors.search = {
     attach: function (context) {
       $(function() {
-        $('.topbar-link-search', context).click();
+        var searchBtn = $('.topbar-link-search', context);
+
+        if (searchBtn.is('.active')) {
+          searchBtn.click();
+        }
       });
     }
   };

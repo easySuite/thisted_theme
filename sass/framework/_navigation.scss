@@ -34,6 +34,19 @@
   }
 }
 
+.main-menu .main-menu {
+  display: block;
+
+  li {
+    // Media queries
+
+    @include till-medium() {
+      border-bottom: 0;
+      border-top: 1px solid rgba($white, .25);
+    }
+  }
+}
+
 
 .system-user-menu {
 
@@ -52,6 +65,19 @@
     text-transform: uppercase;
     font-weight: normal;
     font-size: 80%;
+  }
+
+  // Media queries
+
+  @include from-medium() {
+    .main-menu .main-menu {
+      border-top: 1px solid rgba($white, .25);
+
+      .menu-item {
+        font-size: 60%;
+        margin-right: 10px;
+      }
+    }
   }
 
   // Main menu and secondary menu
