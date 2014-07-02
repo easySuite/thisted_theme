@@ -52,4 +52,43 @@
       });
     }
   };
+
+  /**
+   * Multilevel menu.
+   */
+  Drupal.behaviors.multiLevelMenu = {
+    attach: function (context) {
+      $(function() {
+        // Submenu top position.
+        function menuHeight() {
+          var menu = $('.main-menu-wrapper > .main-menu', context),
+            subMenu = menu.find('.expanded .main-menu'),
+            subMenuTotalHeight = 0;
+
+          // Reset height
+          menu.parent().height('auto');
+
+          subMenu.each(function () {
+            var el = $(this);
+            if (el.is(':visible')) {
+              el.css('top', el.parents('.main-menu:first').height());
+              subMenuTotalHeight += el.height();
+
+              if ($(document).width() >= 740 - (window.innerWidth - $(document).width())) {
+                // Set recalculated height to menu wrapper
+                menu.parent().height(menu.innerHeight() + subMenuTotalHeight);
+              }
+            }
+          });
+        }
+
+        // Menu initialisation
+        menuHeight();
+
+        $(window).resize(function() {
+          menuHeight();
+        });
+      });
+    }
+  };
 })(jQuery);
