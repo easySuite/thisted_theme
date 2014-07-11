@@ -34,13 +34,18 @@ a {
 // Logo
 
 .logo {
-  margin-top: 40px;
-  max-width: 390px;
-  max-height: 95px;
+  margin-top: 10px;
+  width: 242px;
+  height: 81px;
+
+  // Media till-medium
+
+  @include till-medium() {
+    margin: 0;
+  }
 
   a {
-    display: block;
-    width: 100%;
+    display: inline-block;
   }
 }
 
@@ -72,12 +77,26 @@ a {
 
   @at-root {
     .topbar-inner {
+      background-size: contain !important;
+
+      // From medium
+
+      @include from-medium() {
+        background: url(../images/header.png) 50% 100% no-repeat;
+      }
+
+      // Media till-large
 
       @include till-large() {
         min-height: 210px;
       }
-      background: url(../images/header.png) 50% 100% no-repeat;
-      background-size: contain;
+
+      // Media till-medium
+
+      @include till-medium() {
+        min-height: 260px;
+        background: url(../images/header-mobile.png) 50% 100% no-repeat;
+      }
 
       // Media queries
 
@@ -86,11 +105,6 @@ a {
       }
     }
   }
-}
-
-.topbar-menu {
-  top: 40px;
-  bottom: auto;
 }
 
 .header-wrapper {
@@ -128,8 +142,14 @@ a {
 
 .bottom-bg {
   max-width: 1184px;
-  height: 163px;
+  height: 153px;
   background: url(../images/footer-bg.png) 50% 100% no-repeat;
+
+  // Media till-medium
+
+  @include till-medium() {
+    background: url(../images/footer-bg-mobile.png) 50% 100% no-repeat;
+  }
 }
 
 .bottom,
@@ -140,8 +160,14 @@ a {
 
 .bottom {
   padding: 0;
-  min-height: 150px;
+  min-height: 165px;
   background: #0d0e03 url(../images/footer-bg-bottom.png) 50% 0 no-repeat;
+
+  // Media till-medium
+
+  @include till-medium() {
+    background: #0d0e03 url(../images/footer-bg-bottom-mobile.png) 50% 0 no-repeat;
+  }
 
   &,
   a {

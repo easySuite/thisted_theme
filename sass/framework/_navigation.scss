@@ -2,6 +2,19 @@
 //==========================================================================
 
 .topbar-menu {
+  top: 40px;
+  bottom: auto;
+
+  // Media till-medium
+
+  @include till-medium() {
+    position: relative;
+    float: right;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+  }
 
   .menu-item {
     background-color: $color-primary;
@@ -71,6 +84,18 @@
 
 .navigation-wrapper {
   width: auto;
+
+  // Show only submenu for
+
+  .menu-mlid-375 > .main-menu {
+    display: block;
+
+    // Media queries
+
+    @include from-medium() {
+      position: absolute;
+    }
+  }
 
   // Main menu
 
