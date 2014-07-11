@@ -77,11 +77,11 @@ a {
 
   @at-root {
     .topbar-inner {
-      background-size: contain !important;
 
       // From medium
 
       @include from-medium() {
+        background-size: contain !important;
         background: url(../images/header.png) 50% 100% no-repeat;
       }
 
@@ -155,7 +155,12 @@ a {
 .bottom,
 .bottom-bg {
   margin: 0 auto;
-  background-size: contain;
+
+  // Media from-medium
+
+  @include from-medium() {
+    background-size: contain;
+  }
 }
 
 .bottom {

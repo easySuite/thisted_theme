@@ -62,7 +62,7 @@
         // Submenu top position.
         function menuHeight() {
           var menu = $('.main-menu-wrapper > .main-menu', context),
-            subMenu = menu.find('.has-children > .main-menu'),
+            subMenu = menu.find('.expanded  > .main-menu'),
             subMenuTotalHeight = 0;
 
           // Reset height
