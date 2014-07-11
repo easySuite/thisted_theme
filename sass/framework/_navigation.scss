@@ -55,15 +55,6 @@
 
   .main-menu {
 
-    // Media queries
-
-    @include from-medium() {
-      position: absolute;
-      display: block;
-      overflow: hidden;
-      width: 100%;
-    }
-
     li {
       // Media queries
 
