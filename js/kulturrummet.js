@@ -9,14 +9,13 @@
 
       $(window).load(function() {
 
-        // Calculates highest dom element
-
+        // Calculates highest dom element.
         function equalHeights(el1, el2) {
           var currentWidth = $(document).width(),
             scrollWidth = window.innerWidth - $(document).width(),
             max = Math.max(el1.outerHeight(true), el2.outerHeight(true));
 
-          // Set same height for 2 elements
+          // Set same height for 2 elements.
           if (currentWidth > (768 - scrollWidth)) {
             el1.height('auto').height(max);
             el2.height('auto').height(max);
@@ -39,21 +38,6 @@
   };
 
   /**
-   * Collapsing search form by default.
-   */
-  Drupal.behaviors.search = {
-    attach: function (context) {
-      $(function() {
-        var searchBtn = $('.topbar-link-search', context);
-
-        if (searchBtn.is('.active')) {
-          searchBtn.click();
-        }
-      });
-    }
-  };
-
-  /**
    * Multilevel menu.
    */
   Drupal.behaviors.multiLevelMenu = {
@@ -65,7 +49,7 @@
             subMenu = menu.find('.expanded  > .main-menu'),
             subMenuTotalHeight = 0;
 
-          // Reset height
+          // Reset height.
           menu.parent().height('auto');
 
           subMenu.each(function () {
@@ -75,14 +59,14 @@
               subMenuTotalHeight += el.height();
 
               if ($(document).width() >= 740 - (window.innerWidth - $(document).width())) {
-                // Set recalculated height to menu wrapper
+                // Set recalculated height to menu wrapper.
                 menu.parent().height(menu.innerHeight() + subMenuTotalHeight);
               }
             }
           });
         }
 
-        // Menu initialisation
+        // Menu initialisation.
         menuHeight();
 
         $(window).resize(function() {
@@ -91,4 +75,14 @@
       });
     }
   };
+
+
+  /**
+   * On document ready.
+   */
+  $(function() {
+    // Unhide search form.
+    $('.js-topbar-search').css('display', 'block');
+  });
+
 })(jQuery);
