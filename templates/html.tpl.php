@@ -40,7 +40,9 @@
  * @see template_preprocess_html()
  * @see template_process()
  */
-?><!doctype html>
+?><!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="<?php print $language->language; ?>">
 <head>
   <?php print $head; ?>

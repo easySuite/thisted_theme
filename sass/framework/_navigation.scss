@@ -78,7 +78,7 @@
 
   // Show only submenu for
 
-  .menu-mlid-375 > .main-menu:first-of-type {
+  .menu-mlid-375 > a + .main-menu {
     display: block;
 
     // Media queries

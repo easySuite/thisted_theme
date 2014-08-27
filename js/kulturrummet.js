@@ -11,12 +11,13 @@
 
         // Calculates highest dom element.
         function equalHeights(el1, el2) {
-          var currentWidth = $(document).width(),
-            scrollWidth = window.innerWidth - $(document).width(),
+          var innerWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            currentWidth = $(document).width(),
+            scrollWidth = Math.abs(innerWidth - $(document).width()),
             max = Math.max(el1.outerHeight(true), el2.outerHeight(true));
 
           // Set same height for 2 elements.
-          if (currentWidth > (768 - scrollWidth)) {
+          if (currentWidth > (740 - scrollWidth)) {
             el1.height('auto').height(max);
             el2.height('auto').height(max);
           } else {
@@ -45,7 +46,8 @@
       $(function() {
         // Submenu top position.
         function menuHeight() {
-          var menu = $('.main-menu-wrapper > .main-menu', context),
+          var innerWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            menu = $('.main-menu-wrapper > .main-menu', context),
             subMenu = menu.find('.expanded  > .main-menu'),
             subMenuTotalHeight = 0;
 
@@ -58,7 +60,7 @@
               el.css('top', el.parents('.main-menu:first').height());
               subMenuTotalHeight += el.height();
 
-              if ($(document).width() >= 740 - (window.innerWidth - $(document).width())) {
+              if ($(document).width() >= 740 - Math.abs((innerWidth - $(document).width()))) {
                 // Set recalculated height to menu wrapper.
                 menu.parent().height(menu.innerHeight() + subMenuTotalHeight);
               }
