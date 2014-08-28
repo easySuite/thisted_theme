@@ -295,10 +295,14 @@ a {
       max-width: 110px;
     }
 
-    .news-heading,
-    .news-sub-heading,
-    .news-list-content {
-      margin-left: 140px;
+    // Media from-medium
+
+    @include from-medium() {
+      .news-heading,
+      .news-sub-heading,
+      .news-list-content {
+        margin-left: 140px;
+      }
     }
   }
 
