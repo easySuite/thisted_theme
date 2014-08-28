@@ -17,7 +17,7 @@
             max = Math.max(el1.outerHeight(true), el2.outerHeight(true));
 
           // Set same height for 2 elements.
-          if (currentWidth > (740 - scrollWidth)) {
+          if (currentWidth > (768 - scrollWidth)) {
             el1.height('auto').height(max);
             el2.height('auto').height(max);
           } else {
