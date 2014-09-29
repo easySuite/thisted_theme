@@ -206,6 +206,14 @@ a {
   }
 }
 
+header .search .form-actions {
+
+  // From medium
+
+  @include from-medium() {
+    top: 29px;
+  }
+}
 
 
 // 2 Column Layout
