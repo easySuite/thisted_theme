@@ -195,3 +195,14 @@ $prefixes: ("-moz-", "-webkit-", "");
 @mixin bshadow() {
   @include box-shadow($gray 1px 1px 20px);
 }
+
+
+
+// Min height for all browsers including old IE
+//==========================================================================
+
+@mixin min-height($value) {
+  min-height: $value;
+  height: auto !important;
+  height: $value;
+}
