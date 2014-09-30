@@ -1,6 +1,43 @@
+// Include configuration
+
+@import "configuration/_variables";
+@import "configuration/_mixins";
+
 // lt-ie9 styles
 
 .lt-ie9 {
+
+  .bottom a {
+    color: $white;
+  }
+
+  .search-overlay--inner {
+    background-color: $black;
+  }
+
+  .search-overlay--wrapper a,
+  .more-link a,
+  .news-list .news-link a,
+  .news-list .news-author a,
+  .pane-ding-facetbrowser a,
+  .pane-ting-ting-object-types li a,
+  .pane-ting-object .field-name-ting-author a,
+  .pane-search-result .search-results .list .content a {
+    color: $link-color;
+  }
+
+  .pane-ting-object .group-material-details h2 a,
+  .pane-ting-object .group-holdings-available h2 a,
+  .pane-ting-object .ting-object-inner-wrapper h2 a,
+  .pane-search-result .search-results .list .heading h2 a {
+    color: $black;
+  }
+
+  .pane-ding-facetbrowser a:visited,
+  .pane-search-backends a:visited {
+    color: $link-color;
+  }
+
   .panel-2col {
 
     margin-right: 20px;
@@ -22,6 +59,7 @@
 
   .topbar {
     padding-top: 0;
+    background-color: transparent;
 
     .topbar-inner {
       background: url(../images/header.png) 50% 100% no-repeat;
@@ -34,6 +72,9 @@
   }
 
   .search .form-text {
+    @include min-height(60px);
+    padding-top: 0;
+    padding-bottom: 0;
     border: 1px solid #959595;
   }
 
@@ -71,18 +112,24 @@
 
   // Inputs
 
-  .search .form-text,
-  .search-field-in-content .form-text,
-  .user .form-text,
-  .search .form-submit,
-  .search-field-in-content .form-submit,
-  .user .form-submit {
-    line-height: 60px;
+  .header-wrapper {
+    .search .form-text,
+    .search-field-in-content .form-text,
+    .user .form-text,
+    .search .form-submit,
+    .search-field-in-content .form-submit,
+    .user .form-submit {
+      @include min-height(60px);
+      line-height: 60px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .user .form-item {
+      overflow: hidden;
+    }
   }
 
-  .header-wrapper .user .form-item {
-    overflow: hidden;
-  }
 
   // News image
 
