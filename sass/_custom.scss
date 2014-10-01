@@ -74,14 +74,6 @@ a {
 
 .search {
   margin-bottom: 10px;
-
-  // Media from-medium
-
-  @include from-medium() {
-    .form-actions > .form-submit {
-      top: 29px;
-    }
-  }
 }
 
 .topbar {
