@@ -347,3 +347,15 @@ header .search .form-actions {
     padding: 3px 5px;
   }
 }
+
+
+// Campaigns
+
+.ding-campaign-wrapper .ding-campaign {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.ding-campaign-wrapper .ding-campaign.ding-campaign--content {
+  padding: 0;
+}
