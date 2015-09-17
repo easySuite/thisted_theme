@@ -84,7 +84,7 @@
    */
   $(function() {
     // Unhide search form.
-    $('.js-topbar-search').css('display', 'block');
+    $('.js-topbar-search').css('display', 'none');
   });
 
 })(jQuery);
