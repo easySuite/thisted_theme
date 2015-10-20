@@ -34,6 +34,8 @@
         $(window).resize(function() {
           equalHeights(leftCol, rightCol);
         });
+        
+        
       });
     }
   };
@@ -85,6 +87,12 @@
   $(function() {
     // Unhide search form.
     $('.header-inner .js-topbar-search').css('display', 'none');
+
+    $('iframe').each(function() {
+      $(this).load(function() {
+        $(window).resize()
+      });
+    });
   });
 
 })(jQuery);
