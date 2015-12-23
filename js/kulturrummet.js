@@ -86,7 +86,7 @@
    */
   $(function() {
     // Unhide search form.
-    $('.header-inner .js-topbar-search').css('display', 'none');
+    $('.header-inner .js-topbar-search').css('display', 'block');
 
     $('iframe').each(function() {
       $(this).load(function() {

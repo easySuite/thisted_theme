@@ -212,7 +212,7 @@ header .search .form-actions {
   // From medium
 
   @include from-medium() {
-    top: 29px;
+    top: 0;
   }
 }
 
@@ -361,14 +361,7 @@ header .search .form-actions {
   padding: 0;
 }
 
+.not-front .search label,
 .header-wrapper .search label {
-  visibility: hidden;
-}
-
-.header-wrapper .search label {
-  visibility: hidden;
-}
-
-.not-front .search label {
   display: none;
 }
