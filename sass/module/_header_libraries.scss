@@ -93,5 +93,12 @@
         }
       }
     }
+    
+    @include till-medium() {
+      left: 50%;
+      margin-left: -280px;
+      right: inherit;
+      top: 20px;
+    }
   }
 }
