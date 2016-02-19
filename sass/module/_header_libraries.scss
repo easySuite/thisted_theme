@@ -1,0 +1,97 @@
+/**
+ * Styles for header libraries links
+ *
+ * Styles are applied to nodequeue_1 view, block dislpay.
+ * Classes are based on the default view's class names. If items' order or quantity are changed styles can be broken. 
+ *
+ * @author ac
+ */
+
+.node-type-ding-library {
+  .top-libraries-menu {
+    display: none;
+  }
+}
+ 
+.site-header {
+  position: relative;
+
+  .top-libraries-menu {
+    height: 220px;
+    position: absolute;
+    right: 165px;
+    width: 500px;
+    z-index: 20;
+
+    ul {
+      display: block;
+      height: 220px;
+      margin: 0;
+      overflow: hidden;
+      width: 500px;
+
+      li {
+        display: block;
+        height: 30px;
+        position: absolute;
+        text-indent: -9000px;
+        width: 50px;
+
+        .views-field,
+        .field-content,
+        a {
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+
+        a {
+          &:active,
+          &:focus {
+            outline: none;
+          }
+        }
+
+        /* Biblioteket i Thy */
+        &.views-row-1 {
+          height: 83px;
+          right: 57px;
+          top: 78px;
+          width: 131px;
+        }
+
+        /* Musikskolen i Thy */
+        &.views-row-2 {
+          height: 73px;
+          right: 188px;
+          top: 77px;
+          width: 88px;
+        }
+
+        /* Christiansgave */
+        &.views-row-3 {
+          height: 38px;
+          right: 158px;
+          top: 161px;
+          width: 104px;
+        }
+
+        /* Plantagehuset */
+        &.views-row-4 {
+          height: 36px;
+          right: 278px;
+          top: 169px;
+          width: 112px;
+        }
+
+        /* URT */
+        &.views-row-5 {
+          height: 54px;
+          right: 361px;
+          top: 115px;
+          width: 81px;
+        }
+      }
+    }
+  }
+}
