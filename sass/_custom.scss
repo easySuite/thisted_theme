@@ -86,8 +86,8 @@ a {
       // From medium
 
       @include from-medium() {
-        background-size: contain !important;
-        background: url(../images/header.png) 50% 100% no-repeat;
+        background-size: initial !important;
+        background: url(../images/header.png) right 100% no-repeat;
       }
 
       // Media till-large
