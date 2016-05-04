@@ -81,3 +81,16 @@
     }
   }
 }
+
+.search .form-submit {
+  margin-top: 0;
+}
+
+#search-radios {
+  top: -7px;
+
+  label {
+    display: inline-block;
+    margin: 2px;
+  }
+}

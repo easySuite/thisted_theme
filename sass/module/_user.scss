@@ -30,4 +30,18 @@
   .form-item-pass {
     padding-right: 0;
   }
+
+  label {
+    display: none;
+  }
+
+  margin-bottom: 10px;
+}
+
+.pane-user-login .form-actions {
+  top: 0;
+
+  input {
+    margin-top: 0;
+  }
 }
