@@ -371,12 +371,23 @@ header .search .form-actions {
     display: table;
     height: 100%;
 
+    @include small-medium() {
+      display: block;
+      padding: 10px 20px;
+      width: auto;
+    }
+
     .panel-col-first,
     .panel-col-last {
       display: table-cell;
       height: 100%;
       float: none;
       padding-top: 40px;
+
+      @include small-medium() {
+        display: block;
+        width: auto;
+      }
     }
   }
 
