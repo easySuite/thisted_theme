@@ -365,3 +365,33 @@ header .search .form-actions {
 .header-wrapper .search label {
   display: none;
 }
+
+.page-ding-frontpage {
+  .content-wrapper .panel-2col {
+    display: table;
+    height: 100%;
+
+    @include small-medium() {
+      display: block;
+      padding: 10px 20px;
+      width: auto;
+    }
+
+    .panel-col-first,
+    .panel-col-last {
+      display: table-cell;
+      height: 100%;
+      float: none;
+      padding-top: 40px;
+
+      @include small-medium() {
+        display: block;
+        width: auto;
+      }
+    }
+  }
+
+  .pane-ding-event-ding-event-list-frontpage {
+    padding-bottom: 20px;
+  }
+}
