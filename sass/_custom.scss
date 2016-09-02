@@ -382,6 +382,7 @@ header .search .form-actions {
       height: 100%;
       float: none;
       padding-top: 40px;
+      vertical-align: top;
 
       @include small-medium() {
         display: block;
