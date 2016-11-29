@@ -234,6 +234,12 @@ header .search .form-actions {
   .pane-title {
     color: $color-secondary;
   }
+
+  .ding-campaign--content {
+    img.media-element{
+      width: 100%;
+    }
+  }
 }
 
 .panel-2col .panel-col-first {
