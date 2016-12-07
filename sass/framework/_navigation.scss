@@ -2,9 +2,11 @@
 //==========================================================================
 
 .topbar-menu {
-  top: 40px;
-  bottom: auto;
-  z-index: 100;
+  float: right;
+  right: 5px;
+  z-index: 30;
+  position: absolute;
+  top: -5px;
 
   // Media till-medium
 
