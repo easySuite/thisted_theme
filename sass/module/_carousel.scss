@@ -26,8 +26,8 @@ $carousel-tab-background-color:            #252525;
 // Items
 
 .rs-carousel .rs-carousel-items {
-  padding: 24px 20px;
-  background-color: $color-primary;
+  padding: 24px 5px;
+  background: none;
 }
 
 // Item
@@ -94,7 +94,7 @@ $carousel-tab-background-color:            #252525;
 
 .svg .rs-carousel-action-prev {
   left: 30px;
-  background-image: url(../images/icon-left.svg);
+  background-image: url(/sites/all/themes/thisted_theme/images/icon-left.svg);
   background-repeat: no-repeat;
 }
 
@@ -137,6 +137,17 @@ $carousel-tab-background-color:            #252525;
           &:before {
             border-bottom-color: $carousel-active-tab-background-color;
           }
+        }
+      }
+      .field-name-ding-serendipity-info {
+        .field-item {
+          color: $white;
+        }
+      }
+
+      .ding-rating {
+        .fa {
+          color: $white;
         }
       }
     }
