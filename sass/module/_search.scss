@@ -89,6 +89,16 @@
 #search-radios {
   top: -7px;
   left: 700px;
+  width: auto;
+
+  .form-radios {
+    width: auto;
+
+    .form-item-searches {
+      width: auto;
+      display: inherit;
+    }
+  }
 
   label {
     display: inline-block;
