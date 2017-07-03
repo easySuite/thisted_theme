@@ -92,8 +92,11 @@
   width: auto;
 
   .form-radios {
+    width: auto;
+
     .form-item-searches {
       width: auto;
+      display: inherit;
     }
   }
 
